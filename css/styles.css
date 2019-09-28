@@ -14,3 +14,15 @@ p {
   font-size: 2vw;
   margin-bottom: 0;
 }
+
+.smallImg {
+  height: 70px; 
+  width: 70px; 
+  object-fit: cover; 
+  border-radius: 50%;
+}
+
+.bigImg {
+  width:100%; 
+  border-radius: 50%;
+}

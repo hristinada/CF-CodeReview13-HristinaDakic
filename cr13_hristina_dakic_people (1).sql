@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 27, 2019 at 04:33 PM
+-- Generation Time: Sep 28, 2019 at 03:43 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -43,8 +43,12 @@ INSERT INTO `friendships` (`friendshipId`, `fk_user_1`, `fk_user_2`) VALUES
 (10, 1, 5),
 (11, 1, 3),
 (12, 10, 1),
-(13, 5, 6),
-(14, 3, 7);
+(47, 7, 4),
+(48, 4, 3),
+(49, 8, 9),
+(50, 9, 5),
+(51, 3, 6),
+(52, 3, 5);
 
 -- --------------------------------------------------------
 
@@ -65,16 +69,16 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userId`, `userName`, `userEmail`, `userPass`, `userImg`) VALUES
-(1, 'tina', 'tina@gmail.com', '57d4c56c312a498bc432a501e2599406f0a0240c554ee043394d7d0eabe3a8f7', 'https://pbs.twimg.com/profile_images/541512121/P1812_26-09-09_-_Kopie_400x400.jpg'),
-(2, 'johannes', 'johannes@gmail.com', '1d4b41c9db9172e5f151e4a5fe3c57ca3f98b8e6ba807450b10d1897c84ce72b', 'https://pbs.twimg.com/profile_images/1148974811537911809/FIqAfd0l_400x400.png'),
-(3, 'christoph', 'chrisi_aigner@gmx.net', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'https://pbs.twimg.com/profile_images/1148974811537911809/FIqAfd0l_400x400.png'),
-(4, 'goran', 'goran@gmail.com', 'c51d6596f69b211fa3c497631838f709ee63bcb518e1036877180de6ba4da099', 'https://pbs.twimg.com/profile_images/1148974811537911809/FIqAfd0l_400x400.png'),
-(5, 'alira', 'alira@gmail.com', 'dac2a22d2be457080f78becf6723d5a48cdf1a6003bee8fffa556abb8e7bdc2f', 'https://pbs.twimg.com/profile_images/1148974811537911809/FIqAfd0l_400x400.png'),
-(6, 'anja', 'anja@gmail.com', 'a0e503da9510b45ebdfeb86dffce9218d879145aa714599e42f37fd1b8c64986', 'https://pbs.twimg.com/profile_images/1148974811537911809/FIqAfd0l_400x400.png'),
-(7, 'darko', 'darko@gmail.com', '6a87f5096a86b523f33366fc2eea9b604efe74ff58aa45f95d58a7b8914414df', 'https://pbs.twimg.com/profile_images/1148974811537911809/FIqAfd0l_400x400.png'),
-(8, 'kati', 'kati@gmail.com', 'bd53c040b1c28e13f452a6f35ddcdb3a59540cae712fb71a474d8af105159d4e', 'https://pbs.twimg.com/profile_images/1148974811537911809/FIqAfd0l_400x400.png'),
-(9, 'kari', 'kari@gmail.com', 'd44eb131a9fc729aae3aed377733d242c0796290775259142e0bd8d26e1e3132', 'https://pbs.twimg.com/profile_images/1148974811537911809/FIqAfd0l_400x400.png'),
-(10, 'max', 'max@gmail.com', 'c427a238488d0e14d9cc00782407acb9e8a4ef5d564d78c5c6593d3bb26bbc2d', 'https://pbs.twimg.com/profile_images/1148974811537911809/FIqAfd0l_400x400.png');
+(1, 'Tina', 'tina@gmail.com', '57d4c56c312a498bc432a501e2599406f0a0240c554ee043394d7d0eabe3a8f7', 'https://pbs.twimg.com/profile_images/541512121/P1812_26-09-09_-_Kopie_400x400.jpg'),
+(2, 'Johannes', 'johannes@gmail.com', '1d4b41c9db9172e5f151e4a5fe3c57ca3f98b8e6ba807450b10d1897c84ce72b', 'https://www.naschools.net/cms/lib/MA02202086/Centricity/Domain/1358/mickey-mouse.jpg'),
+(3, 'Christoph', 'chrisi_aigner@gmx.net', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'https://images-na.ssl-images-amazon.com/images/I/61BR6ZOsmuL._SL1000_.jpg'),
+(4, 'Goran', 'goran@gmail.com', 'c51d6596f69b211fa3c497631838f709ee63bcb518e1036877180de6ba4da099', 'https://pbs.twimg.com/profile_images/1148974811537911809/FIqAfd0l_400x400.png'),
+(5, 'Alira', 'alira@gmail.com', 'dac2a22d2be457080f78becf6723d5a48cdf1a6003bee8fffa556abb8e7bdc2f', 'https://www.schoolswork.co.uk/media/images/lisa-simpson.gif'),
+(6, 'Anja', 'anja@gmail.com', 'a0e503da9510b45ebdfeb86dffce9218d879145aa714599e42f37fd1b8c64986', 'https://i.pinimg.com/originals/2d/21/99/2d219976c1fff77610bf6d4536cd005d.jpg'),
+(7, 'Darko', 'darko@gmail.com', '6a87f5096a86b523f33366fc2eea9b604efe74ff58aa45f95d58a7b8914414df', 'https://i.pinimg.com/originals/30/7a/7f/307a7fdd59577724198c9ba245f6fe4c.png'),
+(8, 'Kati', 'kati@gmail.com', 'bd53c040b1c28e13f452a6f35ddcdb3a59540cae712fb71a474d8af105159d4e', 'https://assets.cdn.moviepilot.de/files/6ac70bfff3973eb8ffc22ddba34c6897e7a3fda0587dc4beb470fc4628c3/wickie.jpg'),
+(9, 'Kari', 'kari@gmail.com', 'd44eb131a9fc729aae3aed377733d242c0796290775259142e0bd8d26e1e3132', 'https://s7d9.scene7.com/is/image/DisneyStoreES/Character_Assets_Atmb-sq_character-alice_launch?$sq-c$'),
+(10, 'Max', 'max@gmail.com', 'c427a238488d0e14d9cc00782407acb9e8a4ef5d564d78c5c6593d3bb26bbc2d', 'https://s7d9.scene7.com/is/image/DisneyStoreES/Character_Assets_Stmb-sq_character-stitch_launch?$sq-c$');
 
 --
 -- Indexes for dumped tables
@@ -103,7 +107,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `friendships`
 --
 ALTER TABLE `friendships`
-  MODIFY `friendshipId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `friendshipId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `users`
